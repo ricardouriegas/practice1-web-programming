@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        window.onload = function() {
+            var audioElement = document.getElementsByTagName('audio')[0];
+            audioElement.currentTime = 6; // 10 seconds from start
+        };
+    </script>
 </head>
 <body>
     <header>
-        <h1>Bienvenidos a la Tienda de Audífonos</h1>
+        <h1>Welcome</h1>
         <nav>
             <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
+            <!-- <a href="about.html">About Us</a> -->
         </nav>
     </header>
     <!-- Center tbe main -->
     <main class="about">
+        <canvas id="canva"></canvas>
         <section class="about-us">
             <img src="img/josh.jpg" alt="Audífono Inalámbrico Premium" style="width: auto; height: 30em;">
             <h1>Hi im Uriegas</h1>
@@ -70,6 +79,7 @@
             </div>
         </section>
     </main>
+    <script src="balls_script.js"></script>
     <footer>
         <p>REUI</p>
     </footer>

@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Audífonos</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- A little scriipt just to start the song at second 10, bc
+     the song have a long silence at the start -->
+    <script>
+        window.onload = function() {
+            var audioElement = document.getElementsByTagName('audio')[0];
+            audioElement.currentTime = 10; // 10 seconds from start
+        };
+    </script>
 </head>
 <body>
-    <audio src="audio/imnotinlove(instrumental).mp3" autoplay></audio>
+    <canvas id="canva"></canvas>
+    <audio id="audio" src="audio/imnotinlove(instrumental).mp3" autoplay></audio>
     <header>
-        <h1>Bienvenidos a la Tienda de Audífonos</h1>
+        <h1>Welcome ur at Home</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="catalog.html">Store</a>
+            <!-- <a href="index.html">Home</a> -->
+            <a href="catalog.html">Catalog</a>
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
             <a href="about.html">About Us</a>
@@ -21,13 +31,13 @@
     <main>
         <section class="destacados">
             <h2>Analog to Digital</h2>
-            <div class="productos">
-                <div class="producto">
+            <div class="welcome-products">
+                <div class="welcome-product">
                     <img src="img/img1.jpg" alt="Audífono 1">
                     <h3>Digital Stereo</h3>
                     <p>Bass boost and Bluetooth</p>
                 </div>
-                <div class="producto">
+                <div class="welcome-product">
                     <img src="img/img2.jpg" alt="Audífono 2">
                     <h3>Vinyl Player</h3>
                     <p>Analog and portable</p>
@@ -36,6 +46,7 @@
             </div>
         </section>
     </main>
+    <script src="balls_script.js"></script>
     <footer>
         <p>REUI</p>
     </footer>

@@ -8,34 +8,41 @@
 </head>
 <body>
     <audio src="audio/imnotinlove.mp3" autoplay></audio>
+    <canvas id="canva"></canvas>
     <header>
-        <h1>Bienvenidos a la Tienda de Audífonos</h1>
+        <h1>Catalog</h1>
         <nav>
             <a href="index.html">Home</a>
+            <!-- <a href="catalog.html">Catalog</a> -->
             <a href="register.html">Register</a>
             <a href="login.html">Login</a>
+            <a href="about.html">About Us</a>
         </nav>
     </header>
     <main>
         <section class="catalogo">
             <h2>Nuestros Productos</h2>
-            <div class="productos">
-                <div class="producto">
+            <ul class="products-list">
+                <li class="product">
+                    <!-- make image small -->
                     <img src="img/img1.jpg" alt="Audífono 1">
                     <h3>Audífono Inalámbrico Premium</h3>
                     <p>Sonido envolvente y cancelación de ruido.</p>
+                    <p><strong>Precio: $120.00</strong></p>
                     <a href="product_detail.html">Ver más</a>
-                </div>
-                <div class="producto">
+                </li>
+                <li class="product">
                     <img src="img/img2.jpg" alt="Audífono 2">
                     <h3>Audífono Deportivo</h3>
                     <p>Resistente al agua y con ajuste cómodo.</p>
+                    <p><strong>Precio: $80.00</strong></p>
                     <a href="product_detail.html">Ver más</a>
-                </div>
-                <!-- Agregar 8 productos más similares -->
-            </div>
+                </li>
+                <!-- Agregar más productos -->
+            </ul>
         </section>
     </main>
+    <script src="balls_script.js"></script>
     <footer>
         <p>REUI</p>
     </footer>
